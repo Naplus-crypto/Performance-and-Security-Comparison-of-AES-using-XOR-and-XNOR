@@ -175,10 +175,6 @@ def unpad(plaintext):
     # ตรวจสอบความถูกต้องของ padding_len
     assert padding_len > 0
     message, padding = plaintext[:-padding_len], plaintext[-padding_len:]
-    #padding_size = len(padding)
-#    print(f"Padding size: {padding_size} bytes")
-#    print(f"Message: {message}")
-#    print(f"Padding: {padding}")
     # ตรวจสอบความถูกต้องของ padding
     assert all(p == padding_len for p in padding)
     return message
