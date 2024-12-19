@@ -53,11 +53,11 @@ class mode:
         print("IV (base64):", base64.b64encode(iv).decode('utf-8'))
         print("IV (bytes):", iv)
              
-        cipher_text = aes.AES(key).encrypt_ctr(plain_text, iv)
+        cipher_text = XOR_aes.AES(key).encrypt_ctr(plain_text, iv)
         print("Cipher Text (base64):", base64.b64encode(cipher_text).decode('utf-8'))
         print("Cipher Text (hex):", cipher_text.hex())
         
-        decrypted_text = aes.AES(key).decrypt_ctr(cipher_text, iv)
+        decrypted_text = XOR_aes.AES(key).decrypt_ctr(cipher_text, iv)
         if input_type == 's':
         	print("Decrypted Text:", decrypted_text.decode('utf-8'))
         elif input_type == 'h':
@@ -105,13 +105,13 @@ class mode:
 
         print("Key (base64):", base64.b64encode(key).decode('utf-8'))
 
-        cipher_text = Xaes.AES(key).encrypt_ecb(plain_text)
+        cipher_text = XNOR_aes.AES(key).encrypt_ecb(plain_text)
         print("Cipher Text (base64):", base64.b64encode(cipher_text).decode('utf-8'))
         print("Cipher Text (hex):", cipher_text.hex())
         print("Cipher Text (bytes):", cipher_text)
         print("Cipher Text (binary):", bytes2binary(cipher_text))
 
-        decrypted_text = Xaes.AES(key).decrypt_ecb(cipher_text)
+        decrypted_text = XNOR_aes.AES(key).decrypt_ecb(cipher_text)
         if input_type == 's':
             print("Decrypted Text:", decrypted_text.decode('utf-8'))
         elif input_type == 'h':
@@ -159,13 +159,13 @@ class mode:
 
         print("Key (base64):", base64.b64encode(key).decode('utf-8'))
 
-        cipher_text = aes.AES(key).encrypt_ecb(plain_text)
+        cipher_text = XOR_aes.AES(key).encrypt_ecb(plain_text)
         print("Cipher Text (base64):", base64.b64encode(cipher_text).decode('utf-8'))
         print("Cipher Text (hex):", cipher_text.hex())
         print("Cipher Text (bytes):", cipher_text)
         print("Cipher Text (binary):", bytes2binary(cipher_text))
 
-        decrypted_text = aes.AES(key).decrypt_ecb(cipher_text)
+        decrypted_text = XOR_aes.AES(key).decrypt_ecb(cipher_text)
         if input_type == 's':
             print("Decrypted Text:", decrypted_text.decode('utf-8'))
         elif input_type == 'h':
