@@ -1,7 +1,7 @@
 import time
 import tracemalloc
-import aes  # นำเข้าโมดูล aes ที่เขียนเอง
-import Xaes  # นำเข้าโมดูล aes ที่เขียนเอง
+import XOR_aes  # นำเข้าโมดูล aes ที่เขียนเอง
+import XNOR_aes  # นำเข้าโมดูล aes ที่เขียนเอง
 
 def print_message_info(message, message_type):
     message_size_kb = len(message) / 1024
