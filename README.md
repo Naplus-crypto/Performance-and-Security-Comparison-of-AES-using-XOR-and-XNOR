@@ -15,7 +15,7 @@ This project contains a collection of Python scripts for implementing and testin
 - Test suites for encryption algorithms.
 
 ## File Structure
-- **Maes.py**: Core logic for AES-like encryption (if applicable).
+- **Maes.py**: Core logic for AES-like encryption.
 - **XNOR_aes.py**: Implementation of XNOR-based encryption.
 - **XOR_aes.py**: Implementation of XOR-based encryption.
 - **performance_test.py**: Script for evaluating the performance of encryption algorithms.
