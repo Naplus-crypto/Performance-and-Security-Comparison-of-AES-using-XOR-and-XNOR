@@ -12,7 +12,7 @@ def print_message_info(message, message_type):
 class pt:
 	
 	def necb_test(key, plain_text):
-	   aes_instance = Xaes.AES(key)
+	   aes_instance = XNOR_aes.AES(key)
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
@@ -68,7 +68,7 @@ class pt:
 	   #aes_instance.display_padding_info(plain_text)
 	
 	def ctr_test(key, plain_text, iv):
-	   aes_instance = aes
+	   aes_instance = XOR_aes
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
@@ -123,7 +123,7 @@ class pt:
 	
 	
 	def ecb_test(key, plain_text):
-	   aes_instance = aes.AES(key)
+	   aes_instance = XOR_aes.AES(key)
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
