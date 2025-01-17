@@ -2,7 +2,7 @@
 """
 Original AES-128 implementation by Bo Zhu (http://about.bozhu.me) at 
 https://github.com/bozhu/AES-Python . PKCS#7 padding, CBC mode, PKBDF2, HMAC,
-byte array and string support added by at https://github.com/boppreh/aes. 
+byte array and string support added by boppreh at https://github.com/boppreh/aes. 
 Other block modes contributed by @righthandabacus.
 """
 
