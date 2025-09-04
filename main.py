@@ -2,7 +2,7 @@ import mode_aes  # นำเข้าโมดูล aes ที่เขีย�
 
 # Main function to demonstrate AES encryption and decryption with performance testing
 if __name__ == "__main__":
-    mode = input("Do you want to use ECB, NECB or CTR mode?: ").lower()
+    mode = input("Do you want to use ecb, necb or ctr mode?: ").lower()
     
     if mode == 'necb':
         mode_aes.mode.necb()
