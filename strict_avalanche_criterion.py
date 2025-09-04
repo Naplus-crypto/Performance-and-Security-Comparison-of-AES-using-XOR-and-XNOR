@@ -1,14 +1,14 @@
 import matplotlib.pyplot as plt
-import XOR_aes, XNOR_aes # นำเข้าโมดูล aes ที่เขียนเอง
+import xor_aes, xnor_aes # นำเข้าโมดูล aes ที่เขียนเอง
 import binascii
 import os
 
 def encrypt_aes(key, data):
-    cipher = XOR_aes.AES(key).encrypt_ecb(data)
+    cipher = xor_aes.AES(key).encrypt_ecb(data)
     return cipher
     
 def encrypt_modified_aes(key, data):
-    cipher = XNOR_aes.AES(key).encrypt_ecb(data)
+    cipher = xnor_aes.AES(key).encrypt_ecb(data)
     return cipher
 
 def bytes_to_bitstring(byte_data):
