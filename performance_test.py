@@ -1,7 +1,7 @@
 import time
 import tracemalloc
-import XOR_aes  # นำเข้าโมดูล aes ที่เขียนเอง
-import XNOR_aes  # นำเข้าโมดูล aes ที่เขียนเอง
+import xor_aes  # นำเข้าโมดูล aes ที่เขียนเอง
+import xnor_aes  # นำเข้าโมดูล aes ที่เขียนเอง
 
 def print_message_info(message, message_type):
     message_size_kb = len(message) / 1024
@@ -12,7 +12,7 @@ def print_message_info(message, message_type):
 class pt:
 	
 	def necb_test(key, plain_text):
-	   aes_instance = XNOR_aes.AES(key)
+	   aes_instance = xnor_aes.AES(key)
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
@@ -68,7 +68,7 @@ class pt:
 	   #aes_instance.display_padding_info(plain_text)
 	
 	def ctr_test(key, plain_text, iv):
-	   aes_instance = XOR_aes
+	   aes_instance = xor_aes
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
@@ -123,7 +123,7 @@ class pt:
 	
 	
 	def ecb_test(key, plain_text):
-	   aes_instance = XOR_aes.AES(key)
+	   aes_instance = xor_aes.AES(key)
 	   
 	   # Start measuring time and memory
 	   tracemalloc.start()
