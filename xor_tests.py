@@ -126,7 +126,7 @@ class TestCbc(unittest.TestCase):
 
 class TestPcbc(unittest.TestCase):
     """
-    Tests AES-128 in CBC mode.
+    Tests AES-128 in PCBC mode.
     """
     def setUp(self):
         self.aes = AES(b'\x00' * 16)
