@@ -73,7 +73,7 @@ print("Testing modified AES...")
 bit_changes_modified, avg_changes_modified, std_dev_changes_modified, rms_error_changes_modified = test_sac(encrypt_modified_aes, original_data, key)
 print(f"Modified AES - Average number of bit changes per test: {avg_changes_modified}")
 print(f"Modified AES - Standard deviation of bit changes per test: {std_dev_changes_modified}")
-print(f"Original AES - RMSE of bit changes per test: {rms_error_changes_modified}")
+print(f"Modified AES - RMSE of bit changes per test: {rms_error_changes_modified}")
 print(f"Modified AES - Bit changes from each test: {bit_changes_modified}")
 
 # Create scatter plots
