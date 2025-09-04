@@ -1,6 +1,6 @@
 import base64
 import os
-import XOR_aes, XNOR_aes  # นำเข้าโมดูล aes ที่เขียนเอง
+import xor_aes, xnor_aes  # นำเข้าโมดูล aes ที่เขียนเอง
 import performance_test  #นำเข้าโมดูลทดสอบที่เขียนเอง
 
 def bytes2binary(byte_data):
@@ -105,13 +105,13 @@ class mode:
 
         print("Key (base64):", base64.b64encode(key).decode('utf-8'))
 
-        cipher_text = XNOR_aes.AES(key).encrypt_ecb(plain_text)
+        cipher_text = xnor_aes.AES(key).encrypt_ecb(plain_text)
         print("Cipher Text (base64):", base64.b64encode(cipher_text).decode('utf-8'))
         print("Cipher Text (hex):", cipher_text.hex())
         print("Cipher Text (bytes):", cipher_text)
         print("Cipher Text (binary):", bytes2binary(cipher_text))
 
-        decrypted_text = XNOR_aes.AES(key).decrypt_ecb(cipher_text)
+        decrypted_text = xnor_aes.AES(key).decrypt_ecb(cipher_text)
         if input_type == 's':
             print("Decrypted Text:", decrypted_text.decode('utf-8'))
         elif input_type == 'h':
@@ -159,13 +159,13 @@ class mode:
 
         print("Key (base64):", base64.b64encode(key).decode('utf-8'))
 
-        cipher_text = XOR_aes.AES(key).encrypt_ecb(plain_text)
+        cipher_text = xor_aes.AES(key).encrypt_ecb(plain_text)
         print("Cipher Text (base64):", base64.b64encode(cipher_text).decode('utf-8'))
         print("Cipher Text (hex):", cipher_text.hex())
         print("Cipher Text (bytes):", cipher_text)
         print("Cipher Text (binary):", bytes2binary(cipher_text))
 
-        decrypted_text = XOR_aes.AES(key).decrypt_ecb(cipher_text)
+        decrypted_text = xor_aes.AES(key).decrypt_ecb(cipher_text)
         if input_type == 's':
             print("Decrypted Text:", decrypted_text.decode('utf-8'))
         elif input_type == 'h':
