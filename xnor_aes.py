@@ -574,9 +574,9 @@ if __name__ == '__main__':
     read = lambda: sys.stdin.buffer.read()
 
     if len(sys.argv) < 2:
-        print('Usage: ./XNOR_aes.py encrypt "key" "message"')
+        print('Usage: ./xnor_aes.py encrypt "key" "message"')
         print('Running tests...')
-        from XNOR_tests import *
+        from xnor_tests import *
         run()
     elif len(sys.argv) == 2 and sys.argv[1] == 'benchmark':
         benchmark()
