@@ -1,5 +1,5 @@
 import unittest
-from XNOR_aes import AES, encrypt, decrypt
+from xnor_aes import AES, encrypt, decrypt
 
 class TestBlock(unittest.TestCase):
     """
