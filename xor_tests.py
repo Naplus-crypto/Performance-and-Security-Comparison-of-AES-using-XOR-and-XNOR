@@ -1,5 +1,5 @@
 import unittest
-from XOR_aes import AES, encrypt, decrypt
+from xor_aes import AES, encrypt, decrypt
 
 class TestBlock(unittest.TestCase):
     """
