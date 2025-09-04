@@ -1,4 +1,4 @@
-import Maes  # นำเข้าโมดูล aes ที่เขียนเอง
+import mode_aes  # นำเข้าโมดูล aes ที่เขียนเอง
 
 # Main function to demonstrate AES encryption and decryption with performance testing
 if __name__ == "__main__":
