@@ -5,13 +5,13 @@ if __name__ == "__main__":
     mode = input("Do you want to use ECB, NECB or CTR mode?: ").lower()
     
     if mode == 'necb':
-        Maes.mode.necb()
+        mode_aes.mode.necb()
         
     elif mode == 'ecb':
-        Maes.mode.ecb()
+        mode_aes.mode.ecb()
     	
     elif mode == 'ctr':
-        Maes.mode.ctr()
+        mode_aes.mode.ctr()
      
     else:
         print("Invalid mode selected. Please choose 'ecb' for ECB mode, 'necb' for NECB mode or 'ctr' for CTR mode.")
