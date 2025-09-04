@@ -567,9 +567,9 @@ if __name__ == '__main__':
     read = lambda: sys.stdin.buffer.read()
 
     if len(sys.argv) < 2:
-        print('Usage: ./XOR_aes.py encrypt "key" "message"')
+        print('Usage: ./xor_aes.py encrypt "key" "message"')
         print('Running tests...')
-        from XOR_tests import *
+        from xor_tests import *
         run()
     elif len(sys.argv) == 2 and sys.argv[1] == 'benchmark':
         benchmark()
